@@ -1,7 +1,75 @@
-h1 {
-  font-size: 30px;
+body{
+  width: 600px;
+  margin: 0px auto;
+  position: relative;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  h1 {
+    font-size: 30px;
+  }
+  .small-img {
+    width: 300px;
+  }
+  img{
+    width: 100%;
+    transition: all 1.5s ease-in;
+    
+  }
+  figure{
+    position: relative;
+    margin: 0;
+    border: 5px solid white;
+    //box-shadow: -15px 15px 10px black;
+    box-shadow: 0 0 4px black;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    h1,p{
+      transition: all 1s;
+    }
+    h1{
+      transition-delay: 1s;
+    }
+    p{
+      transition-delay: 1.2s;
+    }
+    &:hover figcaption{
+      opacity:1;
+      top:0;
+      h1,p{
+        left: 0;
+      }
+    }
+    &:hover img{
+      -webkit-transform: scale(1.1);
+    }
+  }
+  figcaption{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, .6);
+    font-size: 22px;
+    opacity: 0;
+    transition: all .4s ease-in;
+    transition-delay: .5s;
+    top:-100%;
+
+    h1, p{
+      padding: 20px 40px;
+      margin-top: 0;
+      margin-bottom: 0;
+      position: relative;
+      left:100%;
+
+    }
+    h1{
+      color: white !important;
+      background-color: black;
+    }
+  }
+
+  
 }
 
-.small-img {
-  width: 300px;
-}
