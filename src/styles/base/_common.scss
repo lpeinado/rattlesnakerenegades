@@ -80,12 +80,13 @@ body{
     */
   
     article{
+      font-family: 'Dancing Script', cursive;
       margin:55px auto;
       padding: 30px 20px;
       background-color: #fcf59b;
       position: absolute;
       box-shadow: 0 0 10px rgba(0, 0, 0, .3);
-      background: -webkit-linear-gradient(top, rgb(2, 26, 104), #fcf59b 2%);
+      background: -webkit-linear-gradient(top, rgb(192, 232, 241), #fcf59b 2%);
       background-size: 100% 40px;
       h1, p{
         margin-bottom: 30px;
